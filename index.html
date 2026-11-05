@@ -37,8 +37,8 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .glow-border {
-            border: 1px solid rgba(0, 210, 255, 0.25);
-            box-shadow: 0 0 25px rgba(0, 210, 255, 0.08);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.12);
         }
         .gradient-text {
             background: linear-gradient(135deg, #00D2FF 0%, #8B5CF6 100%);
@@ -59,17 +59,17 @@
                 <div>
                     <div class="flex items-center gap-2">
                         <span class="font-extrabold text-xl tracking-tight text-white">SubCraft</span>
-                        <span class="bg-violet-500/20 text-violet-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-violet-500/30">VIBE96 AUDITED</span>
+                        <span class="bg-violet-500/20 text-violet-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-violet-500/30">VIBE96 EXCLUSIVE</span>
                     </div>
                     <span class="text-xs text-slate-400">Niche Subscription SaaS Engine</span>
                 </div>
             </div>
-            <div class="flex items-center gap-3">
-                <a href="#pricing" class="hidden sm:inline-block text-sm font-semibold text-slate-300 hover:text-white px-3 py-2 transition">Pricing</a>
-                <a href="#niches" class="hidden sm:inline-block text-sm font-semibold text-slate-300 hover:text-white px-3 py-2 transition">5 Niches</a>
-                <a href="#download" class="bg-brand-cyan hover:bg-cyan-300 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-sm transition transform active:scale-95 shadow-md shadow-cyan-400/20 flex items-center gap-2">
-                    <span>Download Demo APK</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <div class="flex items-center gap-4">
+                <a href="#niches" class="hidden sm:inline-block text-sm font-semibold text-slate-300 hover:text-white transition">5 Niches</a>
+                <a href="#calculator" class="hidden sm:inline-block text-sm font-semibold text-slate-300 hover:text-white transition">MRR Calculator</a>
+                <a href="https://vibe96.com" target="_blank" class="bg-brand-cyan hover:bg-cyan-300 text-slate-950 font-black px-5 py-2.5 rounded-xl text-sm transition transform active:scale-95 shadow-md shadow-cyan-400/20 flex items-center gap-2">
+                    <span>Buy License on Vibe96</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
             </div>
         </div>
@@ -79,52 +79,99 @@
     <header class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-emerald-400 font-semibold mb-6">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            100% Vibe96 Code & Security Audit Passed
+            100% Vibe96 Code & Security Audit Verified
         </div>
         <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto mb-6">
             Launch Your Turnkey <br class="hidden sm:inline">
-            <span class="gradient-text">Recurring Subscription SaaS</span> in Minutes
+            <span class="gradient-text">Recurring Subscription SaaS</span> in 24 Hours
         </h1>
         <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
-            A production-grade, audited micro-SaaS codebase built with Kotlin & Jetpack Compose. Ready-to-sell on Vibe96 with built-in MRR analytics, 3-tier pricing, and customer paywall simulator.
+            A production-grade, audited micro-SaaS codebase built with Kotlin & Jetpack Compose. Includes real-time MRR analytics, 3-tier pricing engine, client paywall simulator, and Stripe-ready webhooks.
         </p>
 
-        <!-- CTA Action Buttons -->
+        <!-- CTA Buttons (Directing to Vibe96 for purchase) -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <a href="https://vibe96.com" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white font-bold text-base shadow-lg shadow-violet-600/25 transition transform active:scale-95 flex items-center justify-center gap-2">
-                <span>Buy Source Code on Vibe96</span>
-                <span class="text-violet-200">($149)</span>
+            <a href="https://vibe96.com" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-slate-950 font-black text-base shadow-xl shadow-cyan-500/25 transition transform active:scale-95 flex items-center justify-center gap-2">
+                <span>Get Source Code on Vibe96</span>
+                <span class="bg-black/20 text-slate-950 text-xs px-2 py-0.5 rounded-md font-bold">$149</span>
             </a>
-            <a href="#download" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold text-base border border-slate-700 transition flex items-center justify-center gap-2">
-                <svg class="w-5 h-5 text-brand-cyan" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9996.4482.9996.9993 0 .5511-.4486.9997-.9996.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9997.4482.9997.9993 0 .5511-.4486.9997-.9997.9997m11.4045-6.02l1.996-3.4572c.1174-.2034.0478-.463-.1556-.5804-.2034-.1174-.463-.0478-.5804.1556l-2.024 3.5058C15.4746 8.4116 13.7915 8 12 8s-3.4746.4116-5.1176 1.0452L4.8584 5.5394c-.1174-.2034-.377-.273-.5804-.1556-.2034.1174-.273.377-.1556.5804l1.996 3.4572C3.1256 10.9856 1 14.1378 1 17.842h22c0-3.7042-2.1256-6.8564-5.1185-8.5206"/></svg>
-                <span>Download Android Demo APK</span>
+            <a href="#niches" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold text-base border border-slate-700 transition flex items-center justify-center gap-2">
+                <span>Explore 5 In-Demand Niches</span>
+                <svg class="w-4 h-4 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
         </div>
 
-        <!-- Metrics Highlight Cards -->
+        <!-- Metric Highlight Cards -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <div class="p-5 rounded-2xl bg-brand-card border border-brand-border text-left">
-                <div class="text-xs text-slate-400 font-medium">RECURRING REVENUE</div>
+                <div class="text-xs text-slate-400 font-medium">RECURRING VALUE</div>
                 <div class="text-2xl font-black text-brand-cyan mt-1">$4,850/mo</div>
-                <div class="text-xs text-emerald-400 mt-1 font-semibold">+92% Run Rate</div>
+                <div class="text-xs text-emerald-400 mt-1 font-semibold">+92% Projected Run Rate</div>
             </div>
             <div class="p-5 rounded-2xl bg-brand-card border border-brand-border text-left">
-                <div class="text-xs text-slate-400 font-medium">ACTIVE SUBSCRIBERS</div>
-                <div class="text-2xl font-black text-white mt-1">42 Clients</div>
-                <div class="text-xs text-slate-400 mt-1 font-semibold">Across 5 Niches</div>
+                <div class="text-xs text-slate-400 font-medium">NICHE COVERAGE</div>
+                <div class="text-2xl font-black text-white mt-1">5 Verticals</div>
+                <div class="text-xs text-slate-400 mt-1 font-semibold">Pre-configured Models</div>
             </div>
             <div class="p-5 rounded-2xl bg-brand-card border border-brand-border text-left">
                 <div class="text-xs text-slate-400 font-medium">AVERAGE CHURN</div>
                 <div class="text-2xl font-black text-emerald-400 mt-1">2.4%</div>
-                <div class="text-xs text-slate-400 mt-1 font-semibold">Low churn model</div>
+                <div class="text-xs text-slate-400 mt-1 font-semibold">High Retention Model</div>
             </div>
             <div class="p-5 rounded-2xl bg-brand-card border border-brand-border text-left">
                 <div class="text-xs text-slate-400 font-medium">VIBE96 AUDIT SCORE</div>
                 <div class="text-2xl font-black text-violet-400 mt-1">100/100</div>
-                <div class="text-xs text-emerald-400 mt-1 font-semibold">Approved Standard</div>
+                <div class="text-xs text-emerald-400 mt-1 font-semibold">Ready for Commercial Sale</div>
             </div>
         </div>
     </header>
+
+    <!-- Interactive MRR Calculator (Keeps users hooked without giving free APK) -->
+    <section id="calculator" class="max-w-4xl mx-auto px-6 py-12">
+        <div class="p-8 sm:p-10 rounded-3xl bg-brand-card border border-brand-border glow-border">
+            <div class="text-center max-w-lg mx-auto mb-8">
+                <span class="text-xs font-bold text-brand-cyan uppercase tracking-wider">Revenue Simulator</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Calculate Your Potential MRR</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2">See how quickly SubCraft pays for its $149 license with paying monthly clients.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="text-sm font-semibold text-slate-300">Number of Paying Clients</label>
+                        <span id="clientCountLabel" class="text-lg font-bold text-brand-cyan">25 Subscribers</span>
+                    </div>
+                    <input type="range" id="clientSlider" min="5" max="150" value="25" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400">
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="text-sm font-semibold text-slate-300">Average Plan Price per Month</label>
+                        <span id="priceLabel" class="text-lg font-bold text-violet-400">$79 /month</span>
+                    </div>
+                    <input type="range" id="priceSlider" min="19" max="299" step="10" value="79" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-violet-500">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-brand-border">
+                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-center">
+                        <div class="text-xs text-slate-400 font-medium">MONTHLY RECURRING REVENUE (MRR)</div>
+                        <div id="mrrDisplay" class="text-3xl font-black text-brand-cyan mt-1">$1,975 /mo</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 text-center">
+                        <div class="text-xs text-slate-400 font-medium">ANNUAL RUN RATE (ARR)</div>
+                        <div id="arrDisplay" class="text-3xl font-black text-emerald-400 mt-1">$23,700 /yr</div>
+                    </div>
+                </div>
+
+                <div class="text-center pt-2">
+                    <a href="https://vibe96.com" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-cyan hover:bg-cyan-300 text-slate-950 font-black text-sm transition shadow-lg shadow-cyan-400/20">
+                        <span>Get SubCraft License & Start Earning</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- 5 Niches Section -->
     <section id="niches" class="max-w-6xl mx-auto px-6 py-16">
@@ -207,8 +254,8 @@
     <!-- Pricing Section -->
     <section id="pricing" class="max-w-4xl mx-auto px-6 py-16">
         <div class="text-center mb-12">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-cyan">Marketplace Pricing</h2>
-            <p class="text-3xl font-extrabold text-white mt-2">Source Code Licensing for Buyers</p>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-cyan">Marketplace Licensing</h2>
+            <p class="text-3xl font-extrabold text-white mt-2">Purchase Source Code License on Vibe96</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -228,15 +275,15 @@
                         <li class="flex items-center gap-2"><span class="text-brand-cyan">✓</span> 5 Pre-configured Niches</li>
                     </ul>
                 </div>
-                <a href="https://vibe96.com" target="_blank" class="mt-8 block text-center py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm transition">
-                    Buy Standard ($149)
+                <a href="https://vibe96.com" target="_blank" class="mt-8 block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm transition">
+                    Buy Standard ($149) on Vibe96
                 </a>
             </div>
 
             <!-- Extended License -->
             <div class="p-8 rounded-3xl bg-brand-card border-2 border-brand-cyan glow-border flex flex-col justify-between relative">
                 <div class="absolute -top-3.5 right-6 bg-brand-cyan text-slate-950 text-[11px] font-black uppercase px-3 py-0.5 rounded-full">
-                    Recommended
+                    Most Popular
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-white">Extended Commercial License</h3>
@@ -249,37 +296,46 @@
                         <li class="flex items-center gap-2"><span class="text-brand-cyan">✓</span> Everything in Standard</li>
                         <li class="flex items-center gap-2"><span class="text-brand-cyan">✓</span> 100% White-Label Rights</li>
                         <li class="flex items-center gap-2"><span class="text-brand-cyan">✓</span> Unlimited End-Client Installations</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-cyan">✓</span> Priority Support & Updates</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-cyan">✓</span> Priority Support & Lifetime Updates</li>
                     </ul>
                 </div>
-                <a href="https://vibe96.com" target="_blank" class="mt-8 block text-center py-3 rounded-xl bg-brand-cyan hover:bg-cyan-300 text-slate-950 font-black text-sm transition shadow-lg shadow-cyan-500/20">
-                    Buy Extended ($299)
+                <a href="https://vibe96.com" target="_blank" class="mt-8 block text-center py-3.5 rounded-xl bg-brand-cyan hover:bg-cyan-300 text-slate-950 font-black text-sm transition shadow-lg shadow-cyan-500/20">
+                    Buy Extended ($299) on Vibe96
                 </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="max-w-3xl mx-auto px-6 py-16 text-center">
-        <div class="p-10 rounded-3xl bg-gradient-to-b from-brand-card to-slate-900 border border-brand-border">
-            <h2 class="text-2xl font-bold text-white">Test Drive SubCraft on Your Phone</h2>
-            <p class="text-slate-400 text-sm max-w-md mx-auto mt-2">
-                Download the pre-compiled Android APK directly to test the live MRR dashboard, subscriber CRM, and customer paywall simulator.
-            </p>
-            <div class="mt-8">
-                <a href="SubCraft-v1.0.apk" download class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-brand-cyan hover:bg-cyan-300 text-slate-950 font-bold text-base transition shadow-xl shadow-cyan-500/25 transform active:scale-95">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9996.4482.9996.9993 0 .5511-.4486.9997-.9996.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9997.4482.9997.9993 0 .5511-.4486.9997-.9997.9997m11.4045-6.02l1.996-3.4572c.1174-.2034.0478-.463-.1556-.5804-.2034-.1174-.463-.0478-.5804.1556l-2.024 3.5058C15.4746 8.4116 13.7915 8 12 8s-3.4746.4116-5.1176 1.0452L4.8584 5.5394c-.1174-.2034-.377-.273-.5804-.1556-.2034.1174-.273.377-.1556.5804l1.996 3.4572C3.1256 10.9856 1 14.1378 1 17.842h22c0-3.7042-2.1256-6.8564-5.1185-8.5206"/></svg>
-                    <span>Download SubCraft APK (23 MB)</span>
-                </a>
-            </div>
-            <p class="text-xs text-slate-500 mt-4">Requires Android 7.0 (Nougat) or newer. Safe, offline, zero bloatware.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-brand-border py-8 text-center text-xs text-slate-500">
-        <p>© 2026 SubCraft SaaS Studio. Built for Vibe96 Marketplace.</p>
+    <footer class="border-t border-brand-border py-10 text-center text-xs text-slate-500">
+        <div class="max-w-md mx-auto mb-4">
+            <span class="text-white font-bold">SubCraft SaaS Studio</span> • Officially Audited for Vibe96 Marketplace
+        </div>
+        <p>© 2026 SubCraft. All rights reserved. Source code protected under Vibe96 Commercial License.</p>
     </footer>
 
+    <script>
+        const clientSlider = document.getElementById('clientSlider');
+        const priceSlider = document.getElementById('priceSlider');
+        const clientCountLabel = document.getElementById('clientCountLabel');
+        const priceLabel = document.getElementById('priceLabel');
+        const mrrDisplay = document.getElementById('mrrDisplay');
+        const arrDisplay = document.getElementById('arrDisplay');
+
+        function updateCalculator() {
+            const clients = parseInt(clientSlider.value);
+            const price = parseInt(priceSlider.value);
+            const mrr = clients * price;
+            const arr = mrr * 12;
+
+            clientCountLabel.textContent = clients + ' Subscribers';
+            priceLabel.textContent = '$' + price + ' /month';
+            mrrDisplay.textContent = '$' + mrr.toLocaleString() + ' /mo';
+            arrDisplay.textContent = '$' + arr.toLocaleString() + ' /yr';
+        }
+
+        clientSlider.addEventListener('input', updateCalculator);
+        priceSlider.addEventListener('input', updateCalculator);
+    </script>
 </body>
 </html>
