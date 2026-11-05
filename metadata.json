@@ -1,0 +1,6 @@
+{
+  "name": "SubCraft",
+  "description": "Turnkey Niche Subscription SaaS Engine & Vibe96 Marketplace Launch Studio",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
